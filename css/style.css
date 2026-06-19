@@ -1,0 +1,66 @@
+body {
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+main {
+    padding: 0px 100px;
+    background-image: url("../images/fondo.png");
+}
+
+header {
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin: 0px;
+}
+
+nav li {
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+li:hover {
+    background-color: grey;
+}
+
+.p1 {
+    text-align: justify;
+    padding: 100px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    font-size: 25px;
+    box-shadow: 0px 0px 15px brown;
+    background-color: aqua;
+}
+
+.p2 {
+    text-align: justify;
+    padding: 10px;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    font-size: 15px;
+    box-shadow: 0px 0px 15px rgb(154, 4, 4);
+    background-color: aqua;
+}
+
+#bv {
+    font-size: 35px;
+    text-shadow: 10px 10px 10px gray, -5px -5px 10px gray;
+}
+
+#carouselExample {
+    padding: 10px 30px;
+}
