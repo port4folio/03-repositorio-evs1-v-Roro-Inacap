@@ -13,7 +13,7 @@
     <style>
         p{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            border: 2px green solid;
+            border: 0.5px black solid;
             padding: 10px;
             border-radius: 5px;
         }
@@ -22,19 +22,22 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#bv">Informacion</a></li>
-                <li><a href="#pd">Tipo de viaje</a></li>
-                <li><a href="">Epoca del año</a></li>
-                <li><a href="">Viajes por precio</a></li>
-                <li><a href="">Contacto</a></li>
-            </ul>
-        </nav>
+        <div>
+            <nav>
+                <h3 id="logo_nav">ABC</h3>
+                <ul>
+                    <li><a href="#bv"><b>Información</b></a></li>
+                    <li><a href="#pd"><b>Tipo de viaje</b></a></li>
+                    <li><a href=""><b>Época del año</b></a></li>
+                    <li><a href=""><b>Viajes por precio</b></a></li>
+                    <li><a href=""><b>Contacto</b></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section>
-            <h1 id="bv" style="color: rgb(0, 0, 0);" class="mt-3">¡Bienvenido a Turismo Aventura ABC!</h1>
+            <h1 id="bv" class="mt-3"><b>¡Bienvenido a Turismo Aventura ABC!</b></h1>
             <p class="p1 mt-5">
                 Turismo Aventura ABC es una de las agencias de ecoturismo pioneras en Chile en diseñar viajes que combinan los recorridos
                 culturales, el alojamiento sostenible y confortable – o incluso de lujo- y la experiencia en la naturaleza. Otra de nuestras
@@ -43,43 +46,7 @@
                 Aventura ABC un ecoaliado de confianza.
             </p>
         </section>
-        <section>
-            <h2 id="pd">Itinerario de Tours</h2>
-            <table border="1" class="table">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Destino</th>
-                        <th>Dificultad</th>
-                        <th>Temporada</th>
-                        <th>Precio</th>
-                        <th>Detalles</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Nevados de los Andes</td>
-                        <td>Alta</td>
-                        <td>Invierno</td>
-                        <td>$199.990</td>
-                        <td><a href="#" class="btn btn-primary"><i class="bi bi-info-circle"></i> &nbsp; Ver disponibilidad</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lago Caburga</td>
-                        <td>Facil</td>
-                        <td rowspan="2">Verano</td>
-                        <td>$140.000</td>
-                        <td><a href="#">Ver disponibilidad</a></td>
-                    </tr>
-                    <tr>
-                        <td>Rio los salmones</td>
-                        <td>Muy Facil</td>
-                        <td colspan="2"><a href="#">Ver disponibilidad de viaje</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <div id="carouselExample" class="carousel slide">
+        <section id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="../images/fondo1.png" class="d-block w-100" alt="...">
@@ -102,20 +69,62 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
-        <div>
-            <ul class="p2">
-                <p>Recomendaciones:</p>
-                <li><a>1. Llevar lentes para el sol</a></li>
-                <li><a>2. Llevar calzado de montaña</a></li>
-                <li><a>3. Hidratacion minima 2.5 litros</a></li>
-                <li><a>4. Tener seguro de accidentes</a></li>
-                <li><a>5. Usar protector solar</a></li>
-            </ul>
-        </div>
-        <footer>
-            <p style="background-color: aliceblue; border: none;">Todos los derechos reservados</p>
-        </footer>
+        </section>
+        <section>
+            <h2 id="pd"><b>Itinerario de Tours</b></h2>
+            <div class="table-responsive">
+                <table border="2" class="table align-middle table-bordered text-start">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Destino</th>
+                            <th>Dificultad</th>
+                            <th>Temporada</th>
+                            <th>Precio</th>
+                            <th>Detalles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nevados de los Andes</td>
+                            <td>Alta</td>
+                            <td>Invierno</td>
+                            <td>$199.990</td>
+                            <td><a href="#" class="btn btn-primary"><i class="bi bi-info-circle"></i> &nbsp; Ver disponibilidad</a></td>
+                        </tr>
+                        <tr>
+                            <td>Lago Caburga</td>
+                            <td>Fácil</td>
+                            <td rowspan="2">Verano</td>
+                            <td>$140.000</td>
+                            <td><a href="#" class="btn btn-primary"><i class="bi bi-info-circle"></i> &nbsp; Ver disponibilidad</a></td>
+                        </tr>
+                        <tr>
+                            <td>Río los salmones</td>
+                            <td>Muy Fácil</td>
+                            <td colspan="2"><a href="#" class="btn btn-primary"><i class="bi bi-info-circle"></i> &nbsp; Ver disponibilidad de viaje</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <aside style="display: flex; justify-content: center; align-items: center; gap: 30px; font-weight: bold;">
+            <div class="recomendaciones-box">
+                <p style="border: none;">Recomendaciones:</p>
+                <ol >
+                    <li>Llevar lentes para el sol</li>
+                    <li>Llevar calzado de montaña</li>
+                    <li>Hidratacion minima 2.5 litros</li>
+                    <li>Tener seguro de accidentes</li>
+                    <li>Usar protector solar</li>
+                </ol>
+            </div>
+            <div>
+                <h2 id="bv"><b>Turismo Aventura <br> ABC</b></h2>
+            </div>
+        </aside>
     </main>
+    <footer>
+        <small class="footer_1">- 2026 - Turismo Aventura ABC. Todos los derechos reservados &reg;</small>
+    </footer>
 </body>
 </html>
